@@ -12,17 +12,8 @@ Deploy a self-hosted Security Information and Event Management (SIEM) platform i
 - **Monitored Endpoint VM:** Debian 12 (minimal install), static-capable via DHCP, IP `192.168.1.233`
 - **Agent-to-manager communication:** TCP port 1514
 
-```
-[ Laptop (WiFi) ]
-        |
-        | LAN (192.168.1.0/24)
-        |
-[ Proxmox VE Host ]
-   ├── Wazuh Manager VM  (dashboard + indexer + server)
-   └── Debian Test VM    (Wazuh agent, monitored endpoint)
-```
 
-![Lab architecture diagram](screenshots/architecture-diagram.png)
+![Lab architecture diagram](screenshots/wazuh_lab_architecture.png)
 
 ## What Was Built
 
@@ -36,7 +27,7 @@ Deploy a self-hosted Security Information and Event Management (SIEM) platform i
 
 The monitored Debian endpoint reports as **Active** in the Wazuh dashboard, and failed authentication attempts against it generate visible alerts — confirming the full pipeline (agent → manager → indexer → dashboard) functions correctly.
 
-![Wazuh Agents page showing endpoint as Active](screenshots/active_agents.png)
+![Wazuh Agents page showing endpoint as Active](screenshots/active-agents.png)
 
 ![Failed SSH login alert in Wazuh dashboard](screenshots/alert-dashboard.png)
 
