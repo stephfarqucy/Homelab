@@ -88,7 +88,7 @@ Ticket Encryption Type: 0x17
 ```
 **`0x17` is RC4** — the weak cipher that makes this ticket practically crackable offline, and the specific fingerprint that separates a legitimate service ticket request from an at-risk one.
 
-![ PowerShell output showing the successful attack and the returned ticket object](screenshots/attack_ticket.png)
+![ PowerShell output showing the successful attack and the returned ticket object](screenshots/Attack_ticket.png)
 
 
 ## Result
