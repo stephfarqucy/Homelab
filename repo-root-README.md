@@ -1,11 +1,11 @@
 # Homelab Security Projects
 
-A collection of hands-on security projects built on a self-hosted Proxmox VE home lab, documenting real deployment, attack simulation, and remediation work — including the troubleshooting encountered along the way.
+A collection of hands-on security projects built on a self-hosted Proxmox VE home lab, documenting real deployment, attack simulation, and remediation work including the troubleshooting encountered along the way.
 
 ## Projects
 
 ### [Wazuh SIEM Deployment](./wazuh-siem-lab/README.md)
-Deployed a self-hosted Wazuh SIEM, onboarded a monitored endpoint, and validated the full detection pipeline end-to-end using simulated attack traffic. Includes a detailed incident log covering infrastructure failures diagnosed and resolved along the way — an invalid IP cascading through multiple config files, a missing dependency causing silent failures, and more.
+Deployed a self-hosted Wazuh SIEM, onboarded a monitored endpoint, and validated the full detection pipeline end-to-end using simulated attack traffic. Includes a detailed incident log covering infrastructure failures diagnosed and resolved along the way an invalid IP cascading through multiple config files, a missing dependency causing silent failures, and more.
 
 **Skills demonstrated:** SIEM deployment, Linux/Proxmox administration, systematic root-cause troubleshooting
 
